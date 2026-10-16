@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Adam Chin — engineering, data science and selected projects.">
+  <title>Adam Chin | Engineering &amp; Data Science</title>
+  <style>
+    :root{--ink:#172a39;--muted:#536675;--accent:#126b61;--paper:#f6f7f3;--line:#d8dfda}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.wrap{max-width:1060px;margin:auto;padding:0 28px}header{border-bottom:1px solid var(--line);background:var(--paper)}nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0}.brand{font-weight:800;text-decoration:none;color:var(--ink)}.links{display:flex;flex-wrap:wrap;gap:22px}.links a{font-size:14px;text-decoration:none;color:var(--muted)}.hero{padding:100px 0 80px;max-width:850px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700;color:var(--accent)}h1{font-size:clamp(44px,8vw,82px);letter-spacing:-.06em;line-height:1.06;margin:20px 0 28px}h1 span{color:var(--accent)}.intro{max-width:650px;color:var(--muted);font-size:20px}.button{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:12px 22px;border-radius:5px;margin-top:20px}.section{display:grid;grid-template-columns:200px 1fr;gap:40px;padding:52px 0;border-top:1px solid var(--line)}h2{font-size:22px;letter-spacing:-.03em;margin:0}h3{margin:0 0 6px;font-size:20px}p{margin:0 0 16px}.muted,.meta{color:var(--muted)}.meta{font-size:14px;margin-bottom:14px}article+article{margin-top:32px}ul{padding-left:20px;margin:12px 0}.projects{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:white;padding:24px;border:1px solid var(--line);border-radius:8px}.card p{color:var(--muted);font-size:15px;margin-bottom:0}.tags{display:flex;flex-wrap:wrap;gap:10px}.tags span{padding:7px 14px;border:1px solid var(--line);border-radius:4px;background:white;font-size:14px}footer{padding:28px 0 44px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}.skip{position:absolute;left:16px;top:-100px;background:white;padding:10px}.skip:focus{top:10px}
+    @media(max-width:700px){.wrap{padding:0 22px}nav{align-items:flex-start;flex-direction:column;gap:12px}.links{gap:16px}.hero{padding:60px 0}.section{grid-template-columns:1fr;gap:20px;padding:36px 0}.projects{grid-template-columns:1fr}.intro{font-size:18px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{nav,.button,.skip{display:none}.hero{padding:24px 0}body{background:white;font-size:11pt}.section{padding:20px 0;gap:20px;grid-template-columns:130px 1fr}.card{break-inside:avoid}h1{font-size:36pt}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap"><nav aria-label="Main navigation">
+    <a class="brand" href="#main">ADAM CHIN.</a>
+    <div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+  </nav></div></header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="intro-title">
+      <p class="eyebrow">Engineering · Data science · Problem solving</p>
+      <h1 id="intro-title">Hello, I'm Adam.<br><span>I turn problems<br>into improvements.</span></h1>
+      <!-- EDIT: Replace this introduction with your preferred professional summary. -->
+      <p class="intro">An engineer interested in manufacturing, product reliability and the use of data to improve how things work.</p>
+      <a class="button" href="#projects">Explore my work ↗</a>
+      <!-- OPTIONAL: Upload resume.pdf, then remove the comment around the following link.
+      <a class="button" href="resume.pdf" download>Download my CV</a>
+      -->
+    </section>
+    <section id="about" class="section">
+      <h2>01 / About me</h2>
+      <div><p>I enjoy understanding why things fail, finding practical solutions and turning technical insights into measurable improvements.</p><p class="muted">My interests connect engineering with data science, from manufacturing process improvement to predictive maintenance and hardware reliability.</p></div>
+    </section>
+    <section id="experience" class="section">
+      <h2>02 / Experience</h2>
+      <div>
+        <!-- EDIT: Replace all bracketed text and sample responsibilities before publishing. -->
+        <article><h3>[Most recent job title]</h3><p class="meta">[Company] · [Location] · [Start – End / Present]</p><ul><li>Describe your main engineering responsibilities and the products or processes you support.</li><li>Add a specific improvement, including its measurable outcome where possible.</li><li>Highlight a technical investigation, project or cross-functional contribution.</li></ul></article>
+        <article><h3>[Previous job title]</h3><p class="meta">[Company] · [Location] · [Start – End]</p><ul><li>Describe a significant project, your contribution and its result.</li><li>Include relevant tools, methods or technical responsibilities.</li></ul></article>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <h2>03 / Selected projects</h2>
+      <div class="projects">
+        <!-- EDIT: These are example project descriptions. Replace them with your verified work and links. -->
+        <article class="card"><p class="eyebrow">Project example · Machine learning</p><h3>Predictive maintenance</h3><p>Describe your dataset, modelling approach and how you evaluated failure detection. Add a repository link when ready.</p></article>
+        <article class="card"><p class="eyebrow">Project example · Process improvement</p><h3>Engineering automation</h3><p>Explain the manual process you improved, the tool you built and the time or effort it saved.</p></article>
+      </div>
+    </section>
+    <section id="education" class="section">
+      <h2>04 / Education</h2>
+      <div><article><h3>[Degree / qualification]</h3><p class="meta">[University] · [Year]</p><p class="muted">[Optional: specialisation, dissertation or relevant achievement.]</p></article><article><h3>[Degree / qualification]</h3><p class="meta">[University] · [Year]</p></article></div>
+    </section>
+    <section id="skills" class="section">
+      <h2>05 / Skills</h2>
+      <!-- EDIT: Keep only skills you can confidently discuss. -->
+      <div><p class="meta">Suggested skills — edit to match your experience.</p><div class="tags"><span>Root cause analysis</span><span>Process improvement</span><span>Python</span><span>Data analysis</span><span>Machine learning</span><span>Product reliability</span></div></div>
+    </section>
+    <section id="contact" class="section">
+      <h2>06 / Get in touch</h2>
+      <div><h3>Let's connect.</h3><p class="muted">For professional opportunities, research discussions or engineering collaborations.</p>
+      <!-- EDIT: Replace these placeholders with your real details. Convert them to links when ready. -->
+      <p>Email: [your professional email]<br>LinkedIn: [your profile URL]<br>GitHub: [your username]</p></div>
+    </section>
+  </main>
+  <footer><div class="wrap">© Adam Chin · Built with HTML &amp; CSS.</div></footer>
+</body>
+</html>
