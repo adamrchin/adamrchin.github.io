@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose Renee or Isabel in this browser-local poll.">
+  <title>Renee or Isabel | Poll</title>
+  <style>
+    :root{--ink:#172a39;--muted:#536675;--accent:#126b61;--paper:#f6f7f3;--line:#d8dfda}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.wrap{max-width:1060px;margin:auto;padding:0 28px}header{border-bottom:1px solid var(--line);background:var(--paper)}nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0}.brand{font-weight:800;text-decoration:none;color:var(--ink)}.links{display:flex;flex-wrap:wrap;gap:22px}.links a{font-size:14px;text-decoration:none;color:var(--muted)}.hero{padding:100px 0 80px;max-width:850px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700;color:var(--accent)}h1{font-size:clamp(44px,8vw,82px);letter-spacing:-.06em;line-height:1.06;margin:20px 0 28px}h1 span{color:var(--accent)}.intro{max-width:650px;color:var(--muted);font-size:20px}.button{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:12px 22px;border-radius:5px;margin-top:20px}.section{display:grid;grid-template-columns:200px 1fr;gap:40px;padding:52px 0;border-top:1px solid var(--line)}h2{font-size:22px;letter-spacing:-.03em;margin:0}h3{margin:0 0 6px;font-size:20px}p{margin:0 0 16px}.muted,.meta{color:var(--muted)}.meta{font-size:14px;margin-bottom:14px}article+article{margin-top:32px}ul{padding-left:20px;margin:12px 0}.projects{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:white;padding:24px;border:1px solid var(--line);border-radius:8px}.card p{color:var(--muted);font-size:15px;margin-bottom:0}.tags{display:flex;flex-wrap:wrap;gap:10px}.tags span{padding:7px 14px;border:1px solid var(--line);border-radius:4px;background:white;font-size:14px}footer{padding:28px 0 44px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}.skip{position:absolute;left:16px;top:-100px;background:white;padding:10px}.skip:focus{top:10px}
+    @media(max-width:700px){.wrap{padding:0 22px}nav{align-items:flex-start;flex-direction:column;gap:12px}.links{gap:16px}.hero{padding:60px 0}.section{grid-template-columns:1fr;gap:20px;padding:36px 0}.projects{grid-template-columns:1fr}.intro{font-size:18px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{nav,.button,.skip{display:none}.hero{padding:24px 0}body{background:white;font-size:11pt}.section{padding:20px 0;gap:20px;grid-template-columns:130px 1fr}.card{break-inside:avoid}h1{font-size:36pt}}
+  .projects > article{margin-top:0}.links [aria-current="page"]{color:var(--accent);font-weight:700}.poll{max-width:620px;margin:60px auto 90px}.poll h1{font-size:clamp(42px,8vw,64px)}fieldset{border:0;padding:0;margin:28px 0}legend{font-weight:700;margin-bottom:14px}.choice{display:flex;gap:14px;align-items:center;background:white;border:1px solid var(--line);padding:20px;margin:12px 0;border-radius:8px;cursor:pointer;font-size:20px}.choice:has(input:checked){border:2px solid var(--accent);padding:19px}input{accent-color:var(--accent);width:20px;height:20px}button{font:inherit;border:0;cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.button:disabled{opacity:.55;cursor:default}.result{margin:22px 0}.result-label{display:flex;justify-content:space-between}.track{height:12px;background:var(--line);border-radius:20px;overflow:hidden;margin-top:7px}.fill{height:100%;background:var(--accent)}.notice{font-size:14px;color:var(--muted);margin-top:25px}.change{background:transparent;color:var(--accent);text-decoration:underline;padding:0;margin-top:15px}[hidden]{display:none!important}</style>
+</head>
+<body><a class="skip" href="#main">Skip to content</a><header><div class="wrap"><nav aria-label="Main navigation"><a class="brand" href="index.html">ADAM CHIN.</a><div class="links"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="poll.html" aria-current="page">Poll</a></div></nav></div></header>
+<main id="main" class="wrap"><div class="poll"><p class="eyebrow">Make your choice</p><h1>Renee <span>or</span><br>Isabel?</h1><p class="intro">Two options. Who gets your vote?</p>
+<form id="vote-form"><fieldset><legend>Choose one option</legend><label class="choice"><input type="radio" name="choice" value="Renee" required>Renee</label><label class="choice"><input type="radio" name="choice" value="Isabel" required>Isabel</label></fieldset><button class="button" type="submit">Cast my vote ↗</button></form>
+<section id="results" aria-labelledby="results-title" hidden><h2 id="results-title">Your browser's result</h2><p id="confirmation" role="status" aria-live="polite"></p><div class="result"><div class="result-label"><span>Renee</span><span id="renee-label"></span></div><div class="track"><div id="renee-bar" class="fill"></div></div></div><div class="result"><div class="result-label"><span>Isabel</span><span id="isabel-label"></span></div><div class="track"><div id="isabel-bar" class="fill"></div></div></div><button class="change" id="change" type="button">Change my vote</button></section>
+<p class="notice">Browser-local poll: this page remembers one selection in this browser. These results show only your selection, not votes from other visitors.</p><p id="storage-message" class="notice" role="status"></p><noscript><p>Enable JavaScript to use this poll.</p></noscript></div></main><footer><div class="wrap">© Adam Chin · <a href="index.html">Back to homepage</a></div></footer>
+<script>
+'use strict';
+const key='adam-renee-isabel-poll-v1';
+const form=document.getElementById('vote-form');
+const results=document.getElementById('results');
+function show(choice){
+ if(!['Renee','Isabel'].includes(choice))return;
+ form.hidden=true;results.hidden=false;
+ document.getElementById('confirmation').textContent='Your vote: '+choice+'.';
+ for(const name of ['Renee','Isabel']){
+  const selected=name===choice;
+  document.getElementById(name.toLowerCase()+'-label').textContent=selected?'1 vote · 100%':'0 votes · 0%';
+  document.getElementById(name.toLowerCase()+'-bar').style.width=selected?'100%':'0%';
+ }
+}
+try{show(localStorage.getItem(key));}catch(e){document.getElementById('storage-message').textContent='Browser storage is unavailable. Your selection will last for this visit only.';}
+form.addEventListener('submit',function(e){
+ e.preventDefault();const choice=new FormData(form).get('choice');
+ if(!['Renee','Isabel'].includes(choice))return;
+ try{localStorage.setItem(key,choice);}catch(e){document.getElementById('storage-message').textContent='Your vote could not be saved and will last for this visit only.';}
+ show(choice);
+});
+document.getElementById('change').addEventListener('click',function(){
+ results.hidden=true;form.hidden=false;form.querySelector('input').focus();
+});
+</script></body></html>
